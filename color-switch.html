@@ -16,6 +16,20 @@
             var color = document.getElementById("input").value;
             document.getElementById("color").innerHTML = color;
             body.backgroundColor = "#" + color;
+            
+            switch (color) {
+                case 'red':
+                    body.backgroundColor = "red";
+                    break;
+                case 'blue':
+                    body.backgroundColor = "blue";
+                    break;
+                case 'green':
+                    body.backgroundColor = "green";
+                    break;
+                default:
+                    body.backgroundColor = "#fff";
+            }
         }
     </script>
     
