@@ -13,7 +13,7 @@
     <script>
         function colorSwitch() {
             var body = document.getElementById("body").style;
-            var color = document.getElementById("input").value;
+            var color = document.getElementById("input").value.toLocaleLowerCase();
             document.getElementById("color").innerHTML = color;
             body.backgroundColor = "#" + color;
             
