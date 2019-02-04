@@ -7,16 +7,15 @@
     <input id="input" />
     <p id="color">Color</p>
 
-    <button type="button" onclick="colorSwitch()">Click Me!</button>
+    <button type="button" onclick="colorSwitch()">Switch Color</button>
 
 </body>
     <script>
         function colorSwitch() {
-            var body = document.getElementById("body");
-            console.log(body);
+            var body = document.getElementById("body").style;
             var color = document.getElementById("input").value;
-            console.log(color);
             document.getElementById("color").innerHTML = color;
+            body.backgroundColor = "#" + color;
         }
     </script>
     
