@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body id="body">
+<body>
 
 <h2>Color Switch</h2>
 
@@ -12,21 +12,20 @@
 </body>
     <script>
         function colorSwitch() {
-            var body = document.getElementById("body").style;
             var color = document.getElementById("input").value.toLocaleLowerCase();
             document.getElementById("color").innerHTML = color;
             switch (color) {
                 case 'red':
-                    body.backgroundColor = "red";
+                    document.body.style.backgroundColor = "red";
                     break;
                 case 'blue':
-                    body.backgroundColor = "blue";
+                    document.body.style.backgroundColor = "blue";
                     break;
                 case 'green':
-                    body.backgroundColor = "green";
+                    document.body.style.backgroundColor = "green";
                     break;
                 default:
-                    body.backgroundColor = "#fff";
+                    document.body.style.backgroundColor = "#fff";
             }
         }
     </script>
